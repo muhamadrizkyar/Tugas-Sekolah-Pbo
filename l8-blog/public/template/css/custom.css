@@ -1,0 +1,38 @@
+.input-custom:focus {
+    /* border: 4.8px solid #86B6FE; */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(65, 116, 255);
+    outline: 0 none;
+}
+
+input[type="file"] {
+    color: transparent;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+    overflow: hidden;
+    display: none;
+}
+
+input[type="file"]::before {
+    content: 'UPLOAD GAMBAR';
+    padding: 0.2rem 1rem;
+    background-color: #acacac;
+    border: 2px solid #acacac;
+    font-size: 0.90rem;
+    color: #fff;
+    line-height: 1;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    margin-right: 6px;
+}
+
+/* input[type="file"]:hover::before {
+    background-color: #ff2626;
+    border: 2px solid #ff2626;
+    color: #fff;
+} */
